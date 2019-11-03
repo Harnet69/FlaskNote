@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Edit Flask Note</title>
+    </head>
+    <body>
+        <h1>Edit note</h1>  <!-- Page title -->
+        <form action="/edit-note" method="post">  <!-- This form will send it's data as a POST request to 'http://localhost:5000/edit-note' route when the user **submit** s the form-->
+            <label for="note-input">Note:</label>  <!-- Label for the textarea to help the user understand what is it for. -->
+            <textarea id="note-input" name="note" rows="8" cols="80">{{ note if note }}</textarea>
+            <button type="submit">Save note!</button>  <!-- Let's allow the user to **submit** the form. -->
+        </form>
+    </body>
+</html>

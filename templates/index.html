@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Flask Note</title>
+    </head>
+    <body>
+        <h1>Flask Note</h1>
+        <p>
+    	{{ note if note else 'There is no saved notes' }}
+	</p>
+	<a href="/edit-note">Edit note</a>
+    </body>
+</html>
